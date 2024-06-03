@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    list-style: none !important;
+    text-decoration: none !important;
+}
+
+html,
+body {
+    font-family: "Josefin Sans", sans-serif !important;
+}
+
+.bg_darkturquoise {
+    background: darkturquoise;
+}
+
+.fs_60 {
+    font-size: 60px;
+}
+
+.text_shadow {
+    text-shadow: 2px 2px #b1b0b0;
+}
+
+input {
+    outline: unset;
+    border: 2px solid black;
+}
+
+input::placeholder {
+    color: black !important;
+}
+form button{
+    border: 1px solid white;
+}
