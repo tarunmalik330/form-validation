@@ -30,6 +30,12 @@ input {
 input::placeholder {
     color: black !important;
 }
-form button{
+
+form button {
     border: 1px solid white;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
 }
