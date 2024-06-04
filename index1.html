@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html theme="light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <title>theme-change</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --red-color: red;
+            --white-color: #ffffff;
+            --yellow-color: rgb(255, 179, 1);
+            --pink-color: rgb(255, 0, 191);
+        }
+
+
+        [theme="dark"] {
+            --white-color: #ffffff;
+            --white-color: #000000;
+            /* --blue-color: rgb(89, 255, 0);
+            --pink-color: rgb(1, 255, 247); */
+        }
+
+        [theme="Green"] {
+            --red-color: #000000;
+            --white-color: #00ff95;
+            --blue-color: rgb(0, 255, 89);
+            --pink-color: rgb(0, 66, 64);
+        }
+
+        body {
+            background: var(--white-color);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="mt-5">
+        <div class="d-flex justify-content-center align-items-center">
+            <button class="fw-bold py-2 px-4 bg-danger border-0 text-white" id="toogle-theme">Toggle-button</button>
+
+        </div>
+    </section>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById("toogle-theme").addEventListener("click", function () {
+            if (document.documentElement.getAttribute("theme") === "light") {
+                document.documentElement.setAttribute("theme", "dark")
+            }
+            else if (document.documentElement.getAttribute("theme") === "dark") {
+                document.documentElement.setAttribute("theme", "Green")
+            }
+            else {
+                document.documentElement.setAttribute("theme", "light")
+            }
+        })
+    </script>
+
+</body>
+
+</html>
